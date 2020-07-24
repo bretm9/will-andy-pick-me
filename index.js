@@ -22,14 +22,16 @@ var answers = [
 ];
 
 var inputField = document.querySelector(".input-field");
-var getAnswerButton = document.querySelector(".get-input-button");
+var getAnswerButton = document.querySelector(".get-answer-button");
 var clearButton = document.querySelector(".clear-button");
-var eightBallImg = document.querySelector(".eight-ball-img")
+var eightBallImg = document.querySelector(".eight-ball-img");
+var eightBallAnswer = document.querySelector(".eight-ball-answer");
 
 getAnswerButton.addEventListener("click", getAnswer);
-clearButton.addEventListener("click", clearAnswer);
+// clearButton.addEventListener("click", clearAnswer);
 
 function getAnswer() {
-    classList.toggle(".hidden");
-    eightBallImg.classList.toggle(".hidden");
+    eightBallAnswer.classList.toggle("hidden");
+    eightBallImg.classList.toggle("hidden");
+    
 }
