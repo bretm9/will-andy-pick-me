@@ -37,11 +37,12 @@ function getRandomIndex(array) {
 }
 
 function getAnswer() {
-    
-    questionText.innerText = inputField.value;
-    answerText.innerText = answers[getRandomIndex(answers)];
-       hiddenToggle(eightBallImg, eightBallAnswer);
-    inputField.value = "";
+    if (inputField.value != "") {
+      questionText.innerText = inputField.value;
+      answerText.innerText = answers[getRandomIndex(answers)];
+      hiddenToggle(eightBallImg, eightBallAnswer);
+      inputField.value = "";
+    }
 }
 
 function clearAnswer(){
