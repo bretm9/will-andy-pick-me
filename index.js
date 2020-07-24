@@ -25,4 +25,6 @@ var inputField = document.querySelector(".input-field");
 var getAnswerButton = document.querySelector(".get-input-button");
 var clearButton = document.querySelector(".clear-button");
 
+getAnswerButton.addEventListener("click", getAnswe);
+clearButton.addEventListener("click", clearAnswer);
 
