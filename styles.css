@@ -8,27 +8,29 @@ body {
 
 h1, 
 .get-answer-button, 
-.text-in-input-field {
+.input-field {
     color: #2B4E80;
-}
-
-.get-answer-button-disabled { 
-    color: #607AA0;
 }
 
 .get-answer-button-hover {
   color: #1C3455;
 }
 
-.light-blue-background {
-    color: #E6ECF4;
+.eight-ball-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #E6ECF4;
 }
 
 .clear-button {
     color: #DE4841;
 }
 
-.clear-button-disabled {
+.get-answer-button .disabled { 
+    color: #607AA0;
+}
+
+.clear-button .disabled {
     color: #D0CDCD;
 }
 
