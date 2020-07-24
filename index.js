@@ -37,6 +37,7 @@ function getRandomIndex(array) {
 }
 
 function getAnswer() {
+    
     questionText.innerText = inputField.value;
     answerText.innerText = answers[getRandomIndex(answers)];
 
@@ -44,5 +45,6 @@ function getAnswer() {
       eightBallAnswer.classList.remove("hidden");
       eightBallImg.classList.add("hidden");
     }
+    inputField.value = "";
 }
 
