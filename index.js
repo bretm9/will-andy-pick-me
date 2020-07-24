@@ -20,3 +20,9 @@ var answers = [
     "Outlook not so good.",
     "Very doubtful."
 ];
+
+var inputField = document.querySelector(".input-field");
+var getAnswerButton = document.querySelector(".get-input-button");
+var clearButton = document.querySelector(".clear-button");
+
+
