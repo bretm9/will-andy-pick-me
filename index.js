@@ -31,7 +31,9 @@ getAnswerButton.addEventListener("click", getAnswer);
 // clearButton.addEventListener("click", clearAnswer);
 
 function getAnswer() {
-    eightBallAnswer.classList.toggle("hidden");
-    eightBallImg.classList.toggle("hidden");
-    
+    if (!eightBallImg.classList.value.includes("hidden")) {
+      eightBallAnswer.classList.remove("hidden");
+      eightBallImg.classList.add("hidden");
+    }
+
 }
