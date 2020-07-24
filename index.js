@@ -32,6 +32,10 @@ var answerText = document.querySelector(".answer-text");
 getAnswerButton.addEventListener("click", getAnswer);
 // clearButton.addEventListener("click", clearAnswer);
 
+function getRandomIndex(array) {
+    return Math.floor(Math.random() * array.length);
+}
+
 function getAnswer() {
     questionText.innerText = inputField.value;
     answerText.innerText = answers[getRandomIndex(answers)];
