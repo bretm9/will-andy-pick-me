@@ -24,13 +24,21 @@ body {
     width: 525px;
 }
 
-.eight-ball-form img {
+.eight-ball-main {
     height: auto;
     width: 15em;
     padding: 1em;
     margin-left: auto;
-  margin-right: auto;
+    margin-right: auto;
+}
 
+.eight-ball-answer {
+    display: none;
+}
+
+.eight-ball-form img {
+    height: auto;
+    width: 15em;
 }
 
 h1, 
