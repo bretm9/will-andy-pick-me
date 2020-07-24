@@ -24,7 +24,12 @@ var answers = [
 var inputField = document.querySelector(".input-field");
 var getAnswerButton = document.querySelector(".get-input-button");
 var clearButton = document.querySelector(".clear-button");
+var eightBallImg = document.querySelector(".eight-ball-img")
 
-getAnswerButton.addEventListener("click", getAnswe);
+getAnswerButton.addEventListener("click", getAnswer);
 clearButton.addEventListener("click", clearAnswer);
 
+function getAnswer() {
+    classList.toggle(".hidden");
+    eightBallImg.classList.toggle(".hidden");
+}
