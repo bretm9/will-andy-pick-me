@@ -1,12 +1,73 @@
 /* font-family: 'Open Sans', sans-serif; */
 /* font-family: 'Life Savers', serif; */
 
-/*
-COLORS
-H1, Get answer button, text in input field: #2B4E80;
-Get answer button disabled: #607AA0;
-Get answer button hover: #1C3455;
-light blue background: #E6ECF4;
-clear button: #DE4841;
-clear button disabled: #D0CDCD
-*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Life Savers', serif;
+}
+
+.page-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.eight-ball-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.2em;
+    width: 525px;
+}
+
+.eight-ball-form img {
+    height: auto;
+    width: 15em;
+    padding: 1em;
+    margin-left: auto;
+  margin-right: auto;
+
+}
+
+h1, 
+.get-answer-button, 
+.input-field {
+    color: #2B4E80;
+    text-align: center;
+    margin: .3em;
+    padding: 1em 0;
+}
+
+.get-answer-button-hover {
+  color: #1C3455;
+}
+
+.div-clear-button {
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+}
+
+.eight-ball-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #E6ECF4;
+}
+
+.clear-button {
+    background-color: #DE4841;
+    color: white;
+}
+
+.get-answer-button .disabled { 
+    color: #607AA0;
+}
+
+.clear-button .disabled {
+    color: #D0CDCD;
+}
+
