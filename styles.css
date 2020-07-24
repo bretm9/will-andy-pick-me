@@ -24,13 +24,21 @@ body {
     width: 525px;
 }
 
-.eight-ball-form img {
+.eight-ball-main {
     height: auto;
     width: 15em;
     padding: 1em;
     margin-left: auto;
-  margin-right: auto;
+    margin-right: auto;
+}
 
+.eight-ball-answer {
+    
+}
+
+.eight-ball-img {
+    height: auto;
+    width: 15em;
 }
 
 h1, 
@@ -40,6 +48,12 @@ h1,
     text-align: center;
     margin: .3em;
     padding: 1em 0;
+}
+
+.get-answer-button {
+    color: white;
+    background-color: #2B4E80;
+    border: none;
 }
 
 .get-answer-button-hover {
@@ -61,6 +75,9 @@ justify-content: flex-end;
 .clear-button {
     background-color: #DE4841;
     color: white;
+    width: 5em;
+    height: 2em;
+    border: none;
 }
 
 .get-answer-button .disabled { 
@@ -71,3 +88,6 @@ justify-content: flex-end;
     color: #D0CDCD;
 }
 
+.hidden {
+    display: none;
+}
