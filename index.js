@@ -33,6 +33,9 @@ getAnswerButton.addEventListener("click", getAnswer);
 // clearButton.addEventListener("click", clearAnswer);
 
 function getAnswer() {
+    questionText.innerText = inputField.value;
+    answerText.innerText = answers[getRandomIndex(answers)];
+
     if (!eightBallImg.classList.value.includes("hidden")) {
       eightBallAnswer.classList.remove("hidden");
       eightBallImg.classList.add("hidden");
