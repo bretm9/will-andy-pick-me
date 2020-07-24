@@ -26,6 +26,8 @@ var getAnswerButton = document.querySelector(".get-answer-button");
 var clearButton = document.querySelector(".clear-button");
 var eightBallImg = document.querySelector(".eight-ball-img");
 var eightBallAnswer = document.querySelector(".eight-ball-answer");
+var questionText = document.querySelector(".question-text");
+var answerText = document.querySelector(".answer-text");
 
 getAnswerButton.addEventListener("click", getAnswer);
 // clearButton.addEventListener("click", clearAnswer);
@@ -35,5 +37,5 @@ function getAnswer() {
       eightBallAnswer.classList.remove("hidden");
       eightBallImg.classList.add("hidden");
     }
-
 }
+
