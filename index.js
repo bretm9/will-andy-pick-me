@@ -30,21 +30,28 @@ var questionText = document.querySelector(".question-text");
 var answerText = document.querySelector(".answer-text");
 
 getAnswerButton.addEventListener("click", getAnswer);
-// clearButton.addEventListener("click", clearAnswer);
+clearButton.addEventListener("click", clearAnswer);
 
 function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
 }
 
 function getAnswer() {
-    
-    questionText.innerText = inputField.value;
-    answerText.innerText = answers[getRandomIndex(answers)];
-
-    if (!eightBallImg.classList.value.includes("hidden")) {
-      eightBallAnswer.classList.remove("hidden");
-      eightBallImg.classList.add("hidden");
+    if (inputField.value != "") {
+      questionText.innerText = inputField.value;
+      answerText.innerText = answers[getRandomIndex(answers)];
+      hiddenToggle(eightBallImg, eightBallAnswer);
+      inputField.value = "";
     }
-    inputField.value = "";
 }
 
+function clearAnswer(){
+    hiddenToggle(eightBallAnswer, eightBallImg);
+}
+
+function hiddenToggle(visible, hidden) {
+    if (!visible.classList.value.includes("hidden")) {
+      visible.classList.toggle("hidden");
+      hidden.classList.toggle("hidden");
+    }
+}
