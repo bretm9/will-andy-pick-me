@@ -6,10 +6,19 @@ body {
   font-family: 'Life Savers', serif;
 }
 
+.page-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
 h1, 
 .get-answer-button, 
 .input-field {
     color: #2B4E80;
+    text-align: center;
+    margin: .3em;
 }
 
 .get-answer-button-hover {
@@ -23,7 +32,8 @@ h1,
 }
 
 .clear-button {
-    color: #DE4841;
+    background-color: #DE4841;
+    color: white;
 }
 
 .get-answer-button .disabled { 
